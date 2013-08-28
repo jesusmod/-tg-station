@@ -83,12 +83,12 @@ PROBABILITY CULT 2
 PROBABILITY CHANGELING 2
 PROBABILITY WIZARD 4
 PROBABILITY MALFUNCTION 1
-PROBABILITY BLOB 2
+PROBABILITY BLOB 0
 PROBABILITY METEOR 0
-PROBABILITY EXTENDED 0
+PROBABILITY EXTENDED 6
 
 ## You probably want to keep sandbox off by default for secret and random.
-PROBABILITY SANDBOX 0
+PROBABILITY SANDBOX 3
 
 ## Uncomment to make rounds which end instantly (Rev, Wizard, Malf) continue until
 ## the shuttle is called or the station is nuked.
@@ -114,7 +114,7 @@ ALLOW_LATEJOIN_ANTAGONISTS
 ### RANDOM EVENTS ###
 
 ## Comment this to disable random events during the round.
-ALLOW_RANDOM_EVENTS
+#ALLOW_RANDOM_EVENTS
 
 
 ### AI ###
@@ -128,7 +128,7 @@ ALLOW_AI
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
-GATEWAY_DELAY 18000
+GATEWAY_DELAY 1800
 
 
 ### ACCESS ###
@@ -136,10 +136,10 @@ GATEWAY_DELAY 18000
 ## This is intended for servers with low populations - where there are not enough
 ## players to fill all roles, so players need to do more than just one job.
 ## Also for servers where they don't want people to hide in their own departments.
-#JOBS_HAVE_MINIMAL_ACCESS
+JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you comment JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
 #SECURITY_HAS_MAINT_ACCESS
@@ -150,7 +150,7 @@ GATEWAY_DELAY 18000
 
 ### GHOST INTERACTION ###
 ## Uncomment to let ghosts spin chairs. You may be wondering why this is a config option. Don't ask.
-#GHOST_INTERACTION
+GHOST_INTERACTION
 
 ### NON-VOCAL SILICONS ###
 ## Uncomment to stop the AI, or cyborgs, from having vocal communication.
